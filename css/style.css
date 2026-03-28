@@ -1,0 +1,29 @@
+/* Start Rules  */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* End Rules  */
+/* Start Customize Screens [Responsive-Section] */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Customize Screens [Responsive-Section] */
