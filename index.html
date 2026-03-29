@@ -18,6 +18,45 @@
 </head>
 
 <body>
+    <div id="bookmarks-section" class="bookmarks-section">
+        <h1 id="main-title" class="main-title">Bookmarks Manager</h1>
+        <div id="bookmarks-section-container" class="container">
+            <div id="add-new-bookmarks" class="add-new-bookmarks">
+                <div id="box-title" class="box-title">
+                    <h2 class="sub-title">add new bookmark</h2>
+                </div>
+                <form id="add-form" class="add-form" action="">
+                    <input id="bookmark-name-input" type="text" placeholder="Website text">
+                    <input id="bookmark-url-input" type="url" placeholder="Website URL">
+                    <input id="category-name-input" type="text" placeholder="Category Name">
+                    <input id="add-bookmark-button" type="button" value="Add Bookmark">
+                </form>
+            </div>
+            <div id="show-bookmarks" class="show-bookmarks">
+                <div id="box-title" class="box-title">
+                    <h2 class="sub-title">show all bookmarks</h2>
+                </div>
+                <div id="filter-bookmarks" class="filter-bookmarks">
+                    <ul id="categories" class="categories">
+                        <li>Accounts</li>
+                    </ul>
+                    <select id="filter" class="filter">
+                        <option disabled selected hidden>Filter</option>
+                        <option>Accounts</option>
+                    </select>
+                </div>
+                <div id="bookmarks" class="bookmarks">
+                    <div id="bookmarks-box" class="bookmarks-box">
+                        <div id="bookmarks-details" class="bookmarks-details">
+                            <p id="category-name" class="category-name">Accounts</p>
+                            <a id="bookmark-name" class="bookmark-name" href="">facebook</a>
+                        </div>
+                        <button id="delete-button" class="delete-button">delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

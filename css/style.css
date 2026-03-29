@@ -4,6 +4,20 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFF3E0;
+}
+
 /* End Rules  */
 /* Start Customize Screens [Responsive-Section] */
 @media (min-width: 768px) {
@@ -27,3 +41,183 @@
 }
 
 /* End Customize Screens [Responsive-Section] */
+/* Start Bookmarks Section  */
+.bookmarks-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookmarks-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.bookmarks-section .main-title {
+    text-align: center;
+    color: #BF360C;
+}
+
+.bookmarks-section .sub-title {
+    color: #BF360C;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.bookmarks-section .add-new-bookmarks {
+    background-color: #FFCC80;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.bookmarks-section .add-new-bookmarks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bookmarks-section .add-new-bookmarks .add-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bookmarks-section .add-new-bookmarks .add-form input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 0;
+    border-radius: 10px;
+}
+
+.bookmarks-section .add-new-bookmarks .add-form input:not(:last-of-type) {
+    padding-left: 7px;
+    margin-bottom: 10px;
+}
+
+.bookmarks-section .add-new-bookmarks .add-form input:last-of-type {
+    background-color: #FF8F00;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bookmarks-section .show-bookmarks {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFCC80;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.bookmarks-section .show-bookmarks .filter-bookmarks {
+    background-color: #FFF3E0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .bookmarks-section .show-bookmarks .filter-bookmarks {
+        flex-direction: column;
+    }
+}
+
+.bookmarks-section .show-bookmarks .filter-bookmarks .categories {
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bookmarks-section .show-bookmarks .filter-bookmarks .categories li {
+    background-color: #FFCC80;
+    padding: 5px;
+    border-radius: 10px;
+    color: #BF360C;
+    font-weight: bold;
+}
+
+.bookmarks-section .show-bookmarks .filter-bookmarks .filter {
+    background-color: #FF8F00;
+    border-width: 0;
+    border-radius: 7px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    .bookmarks-section .show-bookmarks .filter-bookmarks .filter {
+        width: 100%;
+    }
+}
+
+.bookmarks-section .show-bookmarks .bookmarks {
+    background-color: #FFF3E0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFCC80;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .category-name,
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .bookmark-name {
+    padding: 5px;
+    border-radius: 10px;
+    color: #BF360C;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .category-name {
+    background-color: #FFF3E0;
+    margin-right: 20px;
+}
+
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .delete-button {
+    background-color: #FF5722;
+    border-width: 0;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    .bookmarks-section .show-bookmarks .bookmarks .bookmarks-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .delete-button {
+        width: 100%;
+    }
+}
+
+/* End Bookmarks Section  */
