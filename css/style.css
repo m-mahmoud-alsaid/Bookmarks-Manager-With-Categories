@@ -1,4 +1,3 @@
-/* Start Rules  */
 * {
     padding: 0;
     margin: 0;
@@ -18,30 +17,24 @@ body {
     background-color: #FFF3E0;
 }
 
-/* End Rules  */
-/* Start Customize Screens [Responsive-Section] */
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
 
-/* Medium */
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
 
-/* Large */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
 
-/* End Customize Screens [Responsive-Section] */
-/* Start Bookmarks Section  */
 .bookmarks-section {
     display: flex;
     align-items: center;
@@ -70,9 +63,6 @@ body {
     background-color: #FFCC80;
     padding: 20px;
     border-radius: 15px;
-}
-
-.bookmarks-section .add-new-bookmarks {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -101,6 +91,7 @@ body {
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .bookmarks-section .show-bookmarks {
@@ -112,22 +103,7 @@ body {
     gap: 15px;
 }
 
-.bookmarks-section .show-bookmarks .filter-bookmarks {
-    background-color: #FFF3E0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 10px;
-    border-radius: 10px;
-}
-
-@media (max-width: 767px) {
-    .bookmarks-section .show-bookmarks .filter-bookmarks {
-        flex-direction: column;
-    }
-}
-
-.bookmarks-section .show-bookmarks .filter-bookmarks .categories {
+.bookmarks-section .show-bookmarks .categories {
     display: flex;
     gap: 10px;
     flex-grow: 1;
@@ -136,29 +112,13 @@ body {
     padding: 10px;
 }
 
-.bookmarks-section .show-bookmarks .filter-bookmarks .categories li {
+.bookmarks-section .show-bookmarks .categories li {
     background-color: #FFCC80;
     padding: 5px;
     border-radius: 10px;
     color: #BF360C;
     font-weight: bold;
-}
-
-.bookmarks-section .show-bookmarks .filter-bookmarks .filter {
-    background-color: #FF8F00;
-    border-width: 0;
-    border-radius: 7px;
-    padding: 5px;
-    color: white;
-    font-weight: bold;
-    width: fit-content;
-    text-transform: capitalize;
-}
-
-@media (max-width: 767px) {
-    .bookmarks-section .show-bookmarks .filter-bookmarks .filter {
-        width: 100%;
-    }
+    cursor: pointer;
 }
 
 .bookmarks-section .show-bookmarks .bookmarks {
@@ -184,18 +144,13 @@ body {
     flex-wrap: wrap;
 }
 
-.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .category-name,
-.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .bookmark-name {
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .category-name,
+.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmark-name {
     padding: 5px;
     border-radius: 10px;
     color: #BF360C;
     font-weight: bold;
     text-transform: capitalize;
-}
-
-.bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .bookmarks-details .category-name {
-    background-color: #FFF3E0;
-    margin-right: 20px;
 }
 
 .bookmarks-section .show-bookmarks .bookmarks .bookmarks-box .delete-button {
@@ -207,6 +162,7 @@ body {
     font-weight: bold;
     width: fit-content;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -219,5 +175,3 @@ body {
         width: 100%;
     }
 }
-
-/* End Bookmarks Section  */

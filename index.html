@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmarks Manager With Categories</title>
-    <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Set CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Set Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -18,42 +15,24 @@
 </head>
 
 <body>
-    <div id="bookmarks-section" class="bookmarks-section">
-        <h1 id="main-title" class="main-title">Bookmarks Manager</h1>
-        <div id="bookmarks-section-container" class="container">
-            <div id="add-new-bookmarks" class="add-new-bookmarks">
-                <div id="box-title" class="box-title">
-                    <h2 class="sub-title">add new bookmark</h2>
-                </div>
+    <div class="bookmarks-section">
+        <h1 class="main-title">Bookmarks Manager</h1>
+        <div class="container">
+            <div class="add-new-bookmarks">
+                <h2 class="sub-title">Add New Bookmark</h2>
                 <form id="add-form" class="add-form" action="">
                     <input id="bookmark-name-input" type="text" placeholder="Website text">
                     <input id="bookmark-url-input" type="url" placeholder="Website URL">
                     <input id="category-name-input" type="text" placeholder="Category Name">
                     <input id="add-bookmark-button" type="button" value="Add Bookmark">
                 </form>
+                <p id="warning-message" class="warning-message"></p>
             </div>
-            <div id="show-bookmarks" class="show-bookmarks">
-                <div id="box-title" class="box-title">
-                    <h2 class="sub-title">show all bookmarks</h2>
-                </div>
-                <div id="filter-bookmarks" class="filter-bookmarks">
-                    <ul id="categories" class="categories">
-                        <li>Accounts</li>
-                    </ul>
-                    <select id="filter" class="filter">
-                        <option disabled selected hidden>Filter</option>
-                        <option>Accounts</option>
-                    </select>
-                </div>
-                <div id="bookmarks" class="bookmarks">
-                    <div id="bookmarks-box" class="bookmarks-box">
-                        <div id="bookmarks-details" class="bookmarks-details">
-                            <p id="category-name" class="category-name">Accounts</p>
-                            <a id="bookmark-name" class="bookmark-name" href="">facebook</a>
-                        </div>
-                        <button id="delete-button" class="delete-button">delete</button>
-                    </div>
-                </div>
+
+            <div class="show-bookmarks">
+                <h2 class="sub-title">Show All Bookmarks</h2>
+                <ul id="categories" class="categories"></ul>
+                <div id="bookmarks" class="bookmarks"></div>
             </div>
         </div>
     </div>
